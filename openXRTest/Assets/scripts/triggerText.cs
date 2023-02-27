@@ -19,9 +19,17 @@ public class triggerText : MonoBehaviour
         {
             InfoTextObject.SetActive(true); 
             StartCoroutine(End()); 
+            
+            
         }
+        Invoke("QuitGame", 0.3f); 
+        QuitGame();
+                    
     }
-
+void QuitGame()
+        { 
+            Application.Quit();
+        }
     IEnumerator End()
     {
         yield return new WaitForSeconds(5);
