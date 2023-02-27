@@ -6,6 +6,8 @@ TagManager:
   tags:
   - epipen
   - phone
+  - player
+  - enemy
   layers:
   - Default
   - TransparentFX
